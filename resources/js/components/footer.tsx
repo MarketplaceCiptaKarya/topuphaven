@@ -50,7 +50,7 @@ const Logo = ({ url, className, children, ...props }: LogoProps) => {
 };
 
 const LogoImage = ({ src, alt, className, ...props }: LogoImageProps) => (
-    <img src={src} alt={alt} className={cn('block h-8 dark:invert', className)} {...props} />
+    <img src={src} alt={alt} className={cn('block h-8', className)} {...props} />
 );
 
 const LogoText = ({ children, className, ...props }: LogoTextProps) => (
