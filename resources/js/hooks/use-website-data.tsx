@@ -2,9 +2,9 @@ export default function useWebsiteData() {
     const navbarData = {
         logo: {
             url: route('home'),
-            src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg',
+            src: '/logo.webp',
             alt: 'Top-up haven logo',
-            title: 'Top-up Haven',
+            title: '',
         },
         menu: [
             {
@@ -22,28 +22,23 @@ export default function useWebsiteData() {
     const carouselData = [
         {
             id: crypto.randomUUID(),
-            image: 'https://placehold.jp/0f0f0f/ffffff/1920x1080.png?text=placeholder1',
-            alt: 'Placeholder Image 1',
+            image: 'https://fls-9fd77362-7789-4fd3-ab74-adaf4e89507f.laravel.cloud/carousels/Carousel1.webp',
+            alt: 'Carousel 1',
         },
         {
             id: crypto.randomUUID(),
-            image: 'https://placehold.jp/0f0f0f/ffffff/1920x1080.png?text=placeholder2',
-            alt: 'Placeholder Image 1',
+            image: 'https://fls-9fd77362-7789-4fd3-ab74-adaf4e89507f.laravel.cloud/carousels/Carousel2.webp',
+            alt: 'Carousel 2',
         },
         {
             id: crypto.randomUUID(),
-            image: 'https://placehold.jp/0f0f0f/ffffff/1920x1080.png?text=placeholder3',
-            alt: 'Placeholder Image 1',
-        },
-        {
-            id: crypto.randomUUID(),
-            image: 'https://placehold.jp/0f0f0f/ffffff/1920x1080.png?text=placeholder4',
-            alt: 'Placeholder Image 1',
+            image: 'https://fls-9fd77362-7789-4fd3-ab74-adaf4e89507f.laravel.cloud/carousels/Carousel3.webp',
+            alt: 'Carousel 3',
         },
     ];
     const footerData = {
         logo: {
-            src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+            src: '/logo.webp',
             alt: 'Top-up Haven Logo',
             title: 'Top-up Haven',
             url: route('home'),
@@ -51,49 +46,23 @@ export default function useWebsiteData() {
         tagline: '',
         menuItems: [
             {
-                title: 'Product',
+                title: 'Menu',
                 links: [
-                    { text: 'Overview', url: '#' },
-                    { text: 'Pricing', url: '#' },
-                    { text: 'Marketplace', url: '#' },
-                    { text: 'Features', url: '#' },
-                    { text: 'Integrations', url: '#' },
-                    { text: 'Pricing', url: '#' },
+                    { text: 'Home', url: route('home') },
+                    { text: 'Check Transaction', url: route('check-transaction') },
                 ],
             },
             {
                 title: 'Company',
                 links: [
-                    { text: 'About', url: '#' },
-                    { text: 'Team', url: '#' },
-                    { text: 'Blog', url: '#' },
-                    { text: 'Careers', url: '#' },
-                    { text: 'Contact', url: route('contact-us'), },
-                    { text: 'Privacy', url: '#' },
-                ],
-            },
-            {
-                title: 'Resources',
-                links: [
-                    { text: 'Help', url: '#' },
-                    { text: 'Sales', url: '#' },
-                    { text: 'Advertise', url: '#' },
-                ],
-            },
-            {
-                title: 'Social',
-                links: [
-                    { text: 'Twitter', url: '#' },
-                    { text: 'Instagram', url: '#' },
-                    { text: 'LinkedIn', url: '#' },
+                    { text: 'Contact Us', url: route('contact-us'), },
+                    { text: 'Terms and Conditions', url: route('terms-and-conditions') },
+                    { text: 'Privacy Policy', url: route('privacy-policy') },
                 ],
             },
         ],
         copyright: `© ${new Date().getFullYear()} Top-up Haven. All rights reserved.`,
-        bottomLinks: [
-            { text: 'Terms and Conditions', url: route('terms-and-conditions'), },
-            { text: 'Privacy Policy', url: route('privacy-policy'), },
-        ],
+        bottomLinks: [],
     };
     const voucherTitle = 'Vouchers';
 
