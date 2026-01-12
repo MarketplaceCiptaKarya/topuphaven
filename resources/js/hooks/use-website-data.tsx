@@ -3,7 +3,7 @@ export default function useWebsiteData() {
         logo: {
             url: route('home'),
             src: '/logo.webp',
-            alt: 'Top-up haven logo',
+            alt: 'Corner Topup logo',
             title: '',
         },
         menu: [
@@ -39,8 +39,8 @@ export default function useWebsiteData() {
     const footerData = {
         logo: {
             src: '/logo.webp',
-            alt: 'Top-up Haven Logo',
-            title: 'Top-up Haven',
+            alt: 'Corner Topup Logo',
+            title: 'Corner Topup',
             url: route('home'),
         },
         tagline: '',
@@ -61,7 +61,7 @@ export default function useWebsiteData() {
                 ],
             },
         ],
-        copyright: `© ${new Date().getFullYear()} Top-up Haven. All rights reserved.`,
+        copyright: `© ${new Date().getFullYear()} Corner Topup. All rights reserved.`,
         bottomLinks: [],
     };
     const voucherTitle = 'Vouchers';
